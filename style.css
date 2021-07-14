@@ -1,0 +1,142 @@
+/* Common styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    background-color: white;
+}
+h1{
+    color: white;
+}
+
+/* navbar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 156px;
+}
+.manubar{
+    margin-top: 42px;
+}
+.manubar a{
+    text-decoration: none;
+    color:white;
+   margin-right: 17px;
+}
+.manubar-login{
+    margin-right: 124px;
+    margin-top: 42px;
+}
+.manubar-login a{
+    text-decoration: none;
+    color:white;
+    background-color: yellow;
+    padding: 2px 8px;
+}
+/* top blogs */
+.top-banner{
+    background-color:#2D25A0;
+    margin-bottom: 70px;
+}
+
+.blog{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    margin-left: 156px;
+    margin-right: 102px;
+}
+.title-1{
+    font-size: 50px;
+    font-weight: 700px;
+    color:white;
+    margin-bottom: 0px;
+}
+.inf-player{ 
+    margin-bottom: 86px;
+}
+.inf-player img{
+    width: 500px;
+    height: 400px;
+}
+.button-1{
+    background-color: tomato;
+    padding: 8px;
+    color: white;
+}
+.icon-1{
+    color: white;
+}
+/* middile blogs
+ */
+ .Details-boxs{
+     display: flex;
+     margin-left: 170px;
+     margin-bottom: 27px;
+ }
+ .first-box{
+     width: 300px;
+     height: 450px;
+     margin-right: 30px;
+     background-color: white;
+     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+ }
+ .box-inf img{
+    width: 301px;
+    height: 250px;
+ }
+    /*--bottom blog--*/
+    .game-inf{
+        display: flex;
+        flex-direction:row;
+        justify-content: space-between;
+        margin-left: 166px;
+        margin-right: 201px;
+    }
+    .inf-name{
+        width: 400px;
+        height:300px;
+    }
+    .matches-picture img{
+        width: 5OOpx;
+        height: 427px;  
+    }
+    .highlight-inf{
+        font-size: 30px;
+    }
+    /* footer styles */
+    .footer-section{
+        margin-top: 158px;
+    }
+    .footer-logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo img{
+        width:400px;
+        height: 110px;
+    }
+    .title-icon{
+        margin-left: 30px;
+    }
+    .footer-bottom{
+        margin-right: 30px;
+        margin-bottom: 66px;
+    }
+    /* Media Queris */
+    /* Mobile device */
+    @media only screen and (max-width:688px) {
+        .top-banner{
+            width:100%;
+        }
+        .navigationbar, .Details-boxs, .recent-game, .footer-section {
+            grid-template-columns:repeat(1, 1fr);
+        }
+        .manubar, .manubar-login, .blog-banner, .first-box, .game-inf, .footer-logo  {
+            flex-direction: column;
+        }
+    }
